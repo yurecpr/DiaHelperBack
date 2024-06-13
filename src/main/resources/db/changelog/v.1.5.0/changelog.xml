@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.6.xsd">
+
+    <changeSet id="add_tag_v.1.5.0" author="gr_37_1_4">
+        <tagDatabase tag="v.1.5.0"/>
+    </changeSet>
+
+
+    <include file="drop-category-id-column.xml" relativeToChangelogFile="true"/>
+    <include file="drop-table-category.xml" relativeToChangelogFile="true"/>
+
+
+</databaseChangeLog>

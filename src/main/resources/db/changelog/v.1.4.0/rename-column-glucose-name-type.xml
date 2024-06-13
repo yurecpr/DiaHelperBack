@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.6.xsd">
+
+    <changeSet id="rename_glucose_to_calories" author="gr_37_1_4">
+
+        <renameColumn
+                tableName="product"
+                oldColumnName="glucose"
+                newColumnName="calories"
+                columnDataType="decimal(7,2)"/>
+    </changeSet>
+
+    <changeSet id="change_type_calories" author="gr_37_1_4">
+
+        <modifyDataType
+                tableName="product"
+                columnName="calories"
+                newDataType="int"/>
+    </changeSet>
+
+</databaseChangeLog>

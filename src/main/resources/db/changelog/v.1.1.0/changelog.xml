@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.6.xsd">
+
+    <changeSet id="add_tag_v.1.1.0" author="gr_37_1_4">
+        <tagDatabase tag="v.1.1.0"/>
+    </changeSet>
+
+    <include file="create-table-user.xml" relativeToChangelogFile="true" />
+    <include file="create-table-product.xml" relativeToChangelogFile="true" />
+    <include file="create-table-user-product.xml" relativeToChangelogFile="true" />
+    <include file="create-table-category.xml" relativeToChangelogFile="true" />
+    <include file="create-table-shopping-list.xml" relativeToChangelogFile="true" />
+    <include file="create-table-user-shopping-list.xml" relativeToChangelogFile="true" />
+    <include file="create-table-product-shopping-list.xml" relativeToChangelogFile="true" />
+    <include file="create-table-role.xml" relativeToChangelogFile="true" />
+    <include file="create-foreign-keys-user-product.xml" relativeToChangelogFile="true" />
+    <include file="create-foreign-keys-product-shopping-list.xml" relativeToChangelogFile="true" />
+    <include file="create-foreign-keys-user-shopping-list.xml" relativeToChangelogFile="true" />
+
+
+
+</databaseChangeLog>

@@ -1,0 +1,30 @@
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/DiaHelper
+    username: postgres
+    password: qwerty007
+  liquibase:
+    change-log: classpath:db/changelog/db.changelog-master.xml
+  jpa:
+    properties:
+      hibernate:
+        auto_quote_keyword: true
+  mail:
+    username: svitlanajpaitstudent@gmail.com
+    password: ioinvhthknwzjrpn
+    host: smtp.gmail.com
+    port: 587
+    properties:
+      mail:
+        debug: true
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+          ssl:
+            protocols: TLSv1.2
+            trust: smtp.gmail.com
+key:
+  access: aovKvB5EPC2sJF8M1vW08teR3cjH8UeqgbCLRSz1vO0=
+  refresh: vrRC763g2HqdiScO2btLXn3DbYonipd40hNSMakDlDg=

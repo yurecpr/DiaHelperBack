@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.6.xsd">
+
+    <changeSet id="create_foreign_keys_user_shopping_list" author="gr_37_1_4">
+        <addForeignKeyConstraint baseTableName="user_shopping_list"
+                                 baseColumnNames="user_id"
+                                 constraintName="fk_user_shopping_list_to_user"
+                                 referencedTableName="user"
+                                 referencedColumnNames="id"/>
+
+        <addForeignKeyConstraint baseTableName="user_shopping_list"
+                                 baseColumnNames="shopping_list_id"
+                                 constraintName="fk_user_shopping_list_to_shopping_list"
+                                 referencedTableName="shopping_list"
+                                 referencedColumnNames="id"/>
+    </changeSet>
+
+
+</databaseChangeLog>

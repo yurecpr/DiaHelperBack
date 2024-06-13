@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.6.xsd">
+
+    <changeSet id="add_product_info" author="yadviha">
+
+            <!-- "Flour Products" -->
+            <insert tableName="product">
+                <column name="product_name" value="Whole Wheat Bread"/>
+                <column name="glucose" value="45"/>
+                <column name="category_id" value="1"/>
+            </insert>
+            <insert tableName="product">
+                <column name="product_name" value="Whole Wheat Pasta"/>
+                <column name="glucose" value="37"/>
+                <column name="category_id" value="1"/>
+            </insert>
+
+            <!-- "Meat" -->
+            <insert tableName="product">
+                <column name="product_name" value="Lean Beef"/>
+                <column name="glucose" value="0"/>
+                <column name="category_id" value="2"/>
+            </insert>
+            <insert tableName="product">
+                <column name="product_name" value="Skinless Chicken Breast"/>
+                <column name="glucose" value="0"/>
+                <column name="category_id" value="2"/>
+            </insert>
+
+            <!-- "Cereals" -->
+            <insert tableName="product">
+                <column name="product_name" value="Oatmeal"/>
+                <column name="glucose" value="58"/>
+                <column name="category_id" value="3"/>
+            </insert>
+            <insert tableName="product">
+                <column name="product_name" value="Brown Rice"/>
+                <column name="glucose" value="45"/>
+                <column name="category_id" value="3"/>
+            </insert>
+
+            <!-- "Vegetables" -->
+            <insert tableName="product">
+                <column name="product_name" value="Broccoli"/>
+                <column name="glucose" value="7"/>
+                <column name="category_id" value="4"/>
+            </insert>
+            <insert tableName="product">
+                <column name="product_name" value="Carrots"/>
+                <column name="glucose" value="6"/>
+                <column name="category_id" value="4"/>
+            </insert>
+
+            <!-- "Fruits" -->
+            <insert tableName="product">
+                <column name="product_name" value="Apples"/>
+                <column name="glucose" value="14"/>
+                <column name="category_id" value="5"/>
+            </insert>
+            <insert tableName="product">
+                <column name="product_name" value="Bananas"/>
+                <column name="glucose" value="20"/>
+                <column name="category_id" value="5"/>
+            </insert>
+
+            <!-- "Berries" -->
+            <insert tableName="product">
+                <column name="product_name" value="Strawberries"/>
+                <column name="glucose" value="8"/>
+                <column name="category_id" value="6"/>
+            </insert>
+            <insert tableName="product">
+                <column name="product_name" value="Blueberries"/>
+                <column name="glucose" value="14"/>
+                <column name="category_id" value="6"/>
+            </insert>
+
+    </changeSet>
+</databaseChangeLog>
